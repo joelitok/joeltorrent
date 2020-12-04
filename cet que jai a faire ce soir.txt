@@ -1,0 +1,766 @@
+
+--Enregistré les données dans la base de données en fonction de date et l'heurs a laquelle elle a été posté
+--Gerer la page detail losque on cli sur on objet on voir les detail
+--Rechercher c'est a dire mettre le  lien qui nous ramener vers la liste des pages
+--Preciser si un objet si on veut une recompanse d'un objet
+--Dois d'abord commencé par modifier login le matin dès que j'arrive au campus
+--Merde le prof pense que on doit faire comment par rapport au theme de recherche qu'il nous a données merde l'ecole n'es pas facile
+--La dernière chose a faire le matin es de lire le tutoriel qui par de angular5 que j'ai commencer.
+--Téléccharger le livre de openclassroom sur le c++ et le c#
+--La journee d'aujourd'hui je dois télechaeger intelljIDEA et chercher un template pour le projet de ivan ,essaye d'adapter le template de notre projet au format de ionic
+--Appeler l'encadreur demain a 8h30
+download the ledge film
+--Gestion du button deconnection
+--Obliger de ce loge d'abord avant de éffectuer n'importe quoi sur l'application
+--Aujourd'hui on a vue beaucoup d'avantage sur les applications
+--Astus pour télécharger n'import qu'il film graduitement est il suffit de taper sur la barre de url de notre navigateur /index of/nomDuFilm
+--Télécharger le livre de pere riche
+--Je me suis arreter a 23min sur le dernier module de formation
+--Concenant le projet de archdenoe j'ai commence a intergrer le template dans le programme mais bugge pour le moment suis un peu fatigue je continue demain
+--Quel la difference entre seco pro et seco general
+--Il est vrai que les enfants m'ont deconcentrer ce matin. mais cet que je dois faire cette journée est de essaye de creer
+ mes propre page au lieu de laisser le CLI de angular generer a ma place. je pris que sa prend c'est que je suis mort 
+--Demain je dois téléchargé destination final le film tout les episode qui existe
+--Apprendre a programmer avec eclipse
+
+
+
+--*************************************************************** Mon resume pour cequi est de la premier partit apprendre a programmer en java
+--Les racourcie sur eclipse
+
+*ALT+SHIFT+N nouveau project eclipse
+*CTRL+S :enregistrer le fichier où l'on est  positionné;
+*CTRL+SHIFT+S :tout sauvegarder;
+*CTRL+W:fermer le fichier où l'on est positionné;
+*CTRL+SHIFT+W  :fermer tous les fichiers ouverts.
+
+--Vous pouvez donc ouvrire l'inviter de commande en se
+ positionnant dans le repertoire souhaiter en utilisant le racourcie windowns+R et 
+en suis ecrire cmd dans l'espace qui dois s'afficher.
+
+--Procedure pour compiler en java en utilisant l'inviter de commande
+*La première des chose a faire es de configurer la variable d'environnement de ton jdk
+*Une fois la configuration effectuer se positionner a l'interieure du dossier contenant ton ton fichier .java
+*Ouvrir l'invite de commande dans ce dossier
+*Puis exercuter la commande suis javac nomFichier.java 
+// ceci doit nous permettre de compiler notre projet pour generer le fichier monFichier.class . 
+//Ce fichier .class contient de byte code de notre programme qui n'est rien d'autre que le code s//ource de notre programme 
+//ecrire en un autre langage comprehensible comprehensible par la JVM(java virtuel marchine qui n'est rien d'autre qu'un langage que le langaga machine comprend facilement)  
+*si a la fin aucune erreur ne c'est produire , il nous suffit d'exercuter la commande java monFichier
+  
+
+donc sur la premiere parti de ce cours on peut dire que 
+--JVM(Java Virtual Machine) est le coeur de la programmation java
+--(JVM)elle fait fonctionner nos programme java precompiler en byte code
+--Les fichier precompiler correspondant a notre code source on l'extension .class
+--Le byte code en comme un intermediare entre le byte code et le langage machine(lagage que la machine comprend)
+--Je programme java precompiler en byte code( .class) peut etre exercuter sur tous les environnement de travail(windows, mac OS, Linux)
+--Votre machine ne peut pas comprendre le byte code elle a besoin du JVM
+--Tous les programme java sont compose de au moins une class
+--Le point de depart de tous les programme java est la methode public static void main(String[] args)
+-On affiche les programme java dans la console grace a la  methode System.out.println()  qui nous permet d'afficher avec un retour chariot 
+--et System.out.print() qui nous permet d'afficher sant retour chariot. 
+--Dans cette instruction, 
+*System ceci correspond a l'appel d'une classe normer System    
+*out est un objet  de la classe System qui  gère la sortie standard.
+*print() est une methode  qui permet d'afficher les element. 
+ 
+
+ ***************************************************************************Fin de la premiere partit apprendre a programmer avec java
+ 
+
+ ***************************************************************************Debut de la parti deux ************************************
+ --variable
+*en java il existe deux type de variable a savoir les variable de type simple ou primitif et les variable de type complexe ou des objets
+nb:1byte=1octet,short=2octets,int=4octets,long=8octet,float=4octets(compqtible avec les entier flottant ie avec la viugule)
+(enfin d'informer la machine que le type utiliser est long nous devons presicer un 'L' a la fin  de chaque caractere
+ 
+*ce qu'il faut retenir sur les variable en java
+--Les  variables  sont  essentielles  dans  la construction de programmes  informatiques .
+On affecte une valeur dans  une variable avec l ' opérateur égal  (« = »).
+Après  avoir affecté une valeur à une variable, l ' instruction doit  se terminer par un point-virgule (« ;  »).
+Vos  noms  de variables  ne doivent  contenir ni caractères  accentués  ni  espaces  et  doivent , dans  la mesure du possible,
+respecter la convention de nommage Java.
+Lorsque vous  effectuez  des  opérations  sur des  variables , prenez  garde à leur type :  vous  pourriez  perdre en précision.
+Vous  pouvez  caster un résultat  en ajoutant  un type devant  celui -ci  :  (int), (double), etc.
+Prenez  garde aux  priorités  lors que vous  castez le résultat  d' opérations , faute de quoi  ce dernier risque d' être incorrect.
+
+nb: les package importer automatique par java se trouve dans la class java.lang on peut site les objet String, System... . 
+un package est tout simplement un ensemble de classe utile.
+
+
+*********************************************************en resume
+*la lecture des entrer clavier se fait via l'objet scanner
+*l'objet Scanner se trouve dans le package java.util que l'on importe
+pour pouvoir recuperer ce que nous tapons dans la console nous devont intialiser Scanner et l'entrer standard System.in
+ex: Scanner test = new Scanner();
+    System.out.println("saisisez votre premier entier");
+	int monEntier =test.nextInt();
+
+
+*****************************************************************chose 	a retenir dans les debut de la programmation orienter objets
+*Une classe permet  de définir des  objets. Ceux-ci  ont  des  attributs  (variables  d'instance) et des  méthodes  (méthodes d’instance + accesseurs).	
+*Les  objets  permettent  d'encapsuler du code et  des  données.
+*Le ou les  constructeurs  d'une classe doivent  porter le même nom  que la classe et  n' ont  pas  de type de retour
+*L'ordre des  paramètres  passés  dans  le constructeur doit  être respecté
+*Il  est  recommandé de déclarer ses  variables  d'intance private, pour les  protéger d'une mauvaise utilisation par le
+programmeur.
+*On crée des accesseurs  et  mutateurs  (mét hodes  getters  et  setters ) pour permettre une modifications sûre des  variables d'instance
+*Dans  une classe, on accède aux  variables  de celle-ci  grâce au mot  clé this.
+*Une variable de classe est  une variable devant  être déclarée static.
+*Les  méthodes  n'utilisant  que des  variables  de classe doivent  elles  aussi  être déclarées  static.
+*On instancie un nouvel  objet  grâce au mot  clé new
+*contrairement au c++ java ne gere pas la notion de heritage multiple
+
+
+************************************************************************2eme partie de la programmation orienter objects
+*****les element que nous devons retenir sont les suivants 
+*Une classe hérite d'une autre classe par le biais  du mot  clé extends
+*Une classe ne peut herité que de une seul classe
+*Si aucun constructeur n'es definir dans la classe fille la JVM creera automatiquement un constructeur dans ces classe fille
+*Les classe fille herite de toute les proprieté public et protected de ces classe mère
+*Les methodes et les proprietés private d'une classe mère ne sont pas accessible par ces classes filles 
+*On peut redefinir une methode hérité c'est a dire que on peut changer tous sont code
+*On utiliser les conportement d'une classe mère par le biais du mot clé super
+*Grace a l'heritage et au polymorphisme nous pouvons utiliser la covariance des variables
+*On ne peut pas hérité d'une classe déclarer final
+*Une methode d'eclarer final n'est pas redefinissable
+*nb: une methode ou une variable sera declarer protected lorsque elle doit etre proteger par les getters et setters 
+et on ne peut pas avoir accès au données de cette classe depuis l'exterieurs  , ces classe fille peuvent hérité des données de cette classe
+
+
+****************************************************3eme modelisation de notre devoir pour une approche UML
+***Le logiciel qui sera utiliser ici est  argoUML autre logiciel que nous pouvons utiliser sont :boUML,Together,poseidon,Pyut...etc
+**Une classe déclarer public est visible meme a l'exterieux de sont package alors tous 
+**Les autre classe ne sont visible que a l'interieux du package dans lequelle il se trouve exemple
+// public class Ville est visible mème a l'exterieux de sont package alors que class Ville n'est visible que a l'interieux du package dans lequelle il se trouve
+//dans ce cas on va dire que leur porter est default
+
+rmq:
+**Un package est un ensemble de dossier et sous-dossier
+**Le nom d'un package est soumis a une convention de nommage
+**Si nous voulons utiliser un mots clé dans le nom de notre package nous devons lui fait suivre d'un underscore
+**Les classe déclarer public  sont visible depuis l'exterieux du package qui leur contient
+**Les classe qui ne sont pas déclarer public ne sont pas visible depuis l'exterieux du package
+**Si une classe déclarer public dans sont package a une variable de type default, cette dernière nee pourra etre déclarer depuis l'exterieurs du programmme
+
+
+************************************************4eme classe abstraire et interface
+rmq:
+**Les class abstrait ne sont pas intanciable 
+**La declaration d'une classe abstraire commence par le mots clé abstract
+**Le class abstraire permettent de definir des methodes abstraire et la particularité des methodes abstraire est que elle n'ont pas de corps
+
+exemple de methode abstraire :abstract void manger()
+nb:Ce type de classe est utiliser lorsqu'on se trouve dans un cas ou plusieurs classe fille hérite d'une classe mère
+
+
+********************************************pour commencer a coder en utilisant react , il faut d'abord
+-- installer nodejs
+--une fois node installer il suffit aussi de installer le gestion des package npm/yarn en utilisant la commande npm i -g npm@last
+--ceci etant fait il nous suffit maintenant de creer notre premier projet react en utilisant la commande creat-react-app myApp
+
+lien pour la gestion des evenement en React:frontarm.com/james-k-nelson/react-events-cheatsheet/
+
+
+
+************************************API AVEC REACT
+
+--il ya la clé api que je doit télécharger en lien dans food2book
+-- pour avoir la clé d'api il faut ce rendre a l'adresses suivante
+https://www.food2fork.com/about/api
+--l'autre url est ecrire apres 1.31.42
+
+*******************************Application games avec react js
+pour commencers
+1- create Store
+2- Apply Middlewares
+3-Provider
+3-intergrer le router a notre aplication en utilisant la commande 
+npm install react-router@next
+
+*************************************application de chat avec ionic 4
+pour la configuration de firebase,
+1-active le service d'authentification de firebase
+2-mettre les credentials dans mon app module
+3-exercuter la comande suivant:
+ npm install angularfire2 firebase promise-polyfill --save
+4-import les outils de la base de donnée dans le appModule
+ces outils sont les suivants
+-- rechercher angular firebase pour avoir les information sur angularfire2/angulqr
+--exercuter: npm install angularfire2 firebase promise-polyfill --save
+
+importer dans app modules les imports suivant:
+
+import {AngularFireModule} from 'angularfire2';
+import {AngularFireDatabaseModule,AngularFireDatabase} from 'angularfire2/database';
+import{AngularFireAuthModule} from 'angularfire2/Auth';
+
+
+mettre ceci parmis les import de notre appModule
+
+AngularFireModule.initializeApp(config),
+AngularFireDatabaseModule,
+AngularFireAuthModule
+
+mettre ceci parmi les provider
+AngularFireDatabase
+
+--En suite installer et configurer le plugin Camera & DatePicker
+--creer votre premier page qui sera la page login en exercutant : ionic g page login
+--creer la deuxieme page qui va nous permettre de enregistrer un nouvelle utilisateur:ionic g page register
+--creer la page pour renouvelle le mot de passe : ionic g page reset-password
+--generer la page de discution: ionic g page chat
+--generer la page du group:ionic g page group
+--generer la page des parametre :ionic g page settings
+
+************************************pour le nouveau test des appliacation les credential sont a mettre dans 
+envivironement
+
+***************react
+je rerient : les props(propriete) sont utilise en react pour afficher les données d'un composant parent vers un composant enfant
+les states en react vont nous permettre de gerer les etats des element c'est a dire les element telque le changement
+et les mise a jour
+
+*****************************************c'est quoi la blockchain.
+la blockchain est une technologie permettant d'obtenir le stockage des données numerique.
+--c'est données sont stocker de facon perenne dans le temps de facon a ce que ces données sont toujour present apres 
+plusieurs années temps la blockchain existe.
+--c'est données sont infalsifiable c'est a dire elle ne peuvent pas etre modifier.
+--c'est données sont stocker dans une architechture distribué
+
+--les fonction fe harchage  est l'outil principale qui permet de tous faire
+fonction dans une blockchain car sans utilité la blockchain est n'a pas d'importance
+ 
+--avantage d'utiliser la blockchain
+*la blockchain pourrait permettre de réduire de 15 à 20 miliards de dollars par an les couts d'infrastructure des 
+banque liés aux paiements internationaux à la sécurité des transactions et à la 
+compiliance réglementaire d'ici 2022 par exemple a l'epoque c'etait très couteux pour les banque d'utiliser une architecture centraliser pour stocker 
+les informations et  se rasurer que les informations perenne, infalsiviable. mais l'un des problème les plus recontrer etait que s'il arrivait que un tiese
+utilisateur modifiait s'attaquait a l'infrastructure alors tout le système etait atteint raison pour laquelle l'utilisation des blockchain es tres important car dans sa philosophie , 
+l'architecture est distribué et chaque utilisateur stocke les informations dans un registre qui doit contenir les meme information que d'autre registre.   
+*la philosophie de la blockchain permet de se passer d'interlocuteur du genre que on n'a pluys besoin d'une structure centralisé pour s'echanger les informations.
+
+
+
+--****TOP 5: Meilleurs Papiers sur la Blockchain dans la Santé
+
+
+La Blockchain est la nouvelle technologie dont tout le monde parle. Cependant, beaucoup ne comprennent pas ce que c’est, comment cela fonctionne et comment elle peut être utilisée. 
+La Blockchain et sa première application, le Bitcoin, sont devenus très populaires dans le secteur financier, avec de nombreuses banques internationales qui investissent dans cette technologie. 
+Mais ses applications ne se limitent pas à la finance et à la banque.
+Un autre secteur qui pourrait bénéficier de la Blockchain est la santé.
+
+Le système de santé doit évoluer et innover. 
+Malgré de grands progrès dans l’approche thérapeutique avec de nouveaux médicaments en développement tous les ans,
+celui-ci manque de fluidité, de modernité et d’efficacité.
+
+
+Aujourd’hui, il est encore difficile d’assurer la traçabilité complète des medicaments. 
+Les médecins commettent des erreurs médicales parce qu’ils n’ont pas accès à temps au dossier médical complet d’un patient. 
+Les données des essais cliniques sont difficiles à obtenir et à partager. La Blockchain pourrait être le levier de changement dans le système de santé.
+ Voici un TOP 5 des meilleurs articles sur les applications possibles de la technologie Blockchain dans l’industrie de la santé:
+ 
+1*Blockchain: Opportunities for Health Care – Deloitte
+
+Authors: RJ Krawiec, Dan Housman, Mark White, Mariya Filipova, Florian Quarre, Dan Barr, Allen Nesbitt, Kate Fedosova,
+Jason Killmeyer, Adam Israël, Lindsay Tsai.
+
+
+Cet article présente clairement dans quelles circonstances la technologie Blockchain 
+peut être utilisée et comment elle peut être implémentée dans le système de santé. Il montre comment les patients, 
+les professionnels de santé ou les établissements de soins peuvent collaborer en utilisant cette technologie.
+
+
+/Interopérabilité à l’échelle nationale
+/Accès aux dossiers médicaux
+/Médecine personnalisée
+/Contrats intelligents
+/Identité digitale des patients
+
+
+«Bien que la technologie blockchain ne soit pas une panacée pour 
+la normalisation des données ou les défis d’intégration des systèmes, 
+elle offre un nouveau cadre prometteur pour amplifier et soutenir l’intégration 
+des informations de santé à travers une gamme d’utilisations et de parties prenantes. 
+Elle s’adresse à plusieurs problématiques existantes et permet un système plus efficace, sans intermédiaires et sécurisé. »
+
+
+2**Co-Creation of Trust for Healthcare: The Cryptocitizen Framework for Interoperability with Blockchain
+
+Auteurs: Peter B. Nichol & Jeff Brandt
+Grâce à des exemples de la vie quotidienne d’un patient, ce document explore l’importance de 
+l’interopérabilité quand il s’agit de données de santé et 
+explique comment la blockchain peut résoudre certains problèmes de la communauté médicale.
+
+/Les soins de santé centrés sur la personne
+/Interopérabilité
+/Contrats intelligents
+/Identité souveraine
+/Dossiers de santé électroniques
+
+«L’identité auto-souveraine est guidée par le principe selon lequel chaque patient 
+est la source et donc le propriétaire de sa propre identité.
+ Ce n’est pas un contrôle administratif qui peut être loué, 
+ prêté ou vendu. L’immutabilité de la blockchain endurcit les données au fil du temps, 
+pour offrir un enregistrement canonique des données sur la santé. »
+
+
+3***Blockchain: The Chain of Trust and its Potential to Transform Healthcare – Our Point of View
+Auteurs: IBM – IBM Global Business Services Public Sector Team
+
+Cet article fournit une grande analyse des problématiques de l’industrie de la santé et 
+explique comment la blockchain peut les résoudre. Il fournit également des études de cas concrètes
+ pour illustrer les applications possibles de cette technologie.
+ 
+/Interopérabilité
+/Infrastructure de paiement préautorisé
+/Prévention et détection des médicaments de contrefaçon
+/Résultats des essais cliniques
+/IoT
+
+«Bien que le consensus technique sur un registre distribué pour les données 
+de santé n’ait pas encore émergé, avec des débats sur l’évolution,
+ la sécurité et la conformité réglementaire, la technologie blockchain et 
+le cryptage stimuleront l’innovation dans les services de santé et l’administration. »
+
+4****Blockchain For Health Data and its Potential Use in Health IT and Health Care Related Research
+
+Auteurs: Laure A. Linn et Martha B. Koo, M.D.
+
+Cet article explique concrètement comment les données de santé d’un patient peuvent 
+être stockées et gérées à travers la blockchain et les Data Lakes. 
+Il analyse également comment les professionnels de santé et
+les organisations peuvent accéder à ces données et utiliser la data.
+
+/Blockchain publique
+/Contrôle de l’accès
+/Data Lake
+/Requêtes de données, analyse et Machine Learning
+/IoT
+
+«L’information contenue dans notre blockchain de santé serait sous forme d’index,
+ une liste de tous les dossiers de santé de l’utilisateur et des données sur sa santé.
+ L’index est similaire à un catalogue de livres dans une bibliothèque. 
+ Le catalogue de livres contient des métadonnées sur le livre et un emplacement 
+ où le livre peut être trouvé.
+
+5*****MedRec: Medical Data Management on the Blockchain
+Auteurs: A. Ekblaw, A. Azaria, T. Vieira & A. Lippman
+
+MedRec utilise la blockchain et les contrats intelligents (smart contracts) 
+pour créer une plateforme de gestion des données pour les dossiers médicaux du patient et 
+la communauté médicale. Cette étude propose également un nouveau 
+modèle économique où les mineurs du système seraient récompensés en data plutôt qu’en monnaie. 
+La blockchain de santé fonctionnerait de la même manière. »
+
+/Contrats intelligents
+/Blockchain Ethereum
+/Références à des données médicales disparates
+/Données immuables
+/Interface utilisateur flexible
+
+
+***********************************project cc 
+lutter contre les faux medicament avec la blockchain
+la confiance est la pierre angulaire de la profession médicale . lorsque nous tombons malades nous pensons que les médécins ont à coeur nos mailleurs interet .
+nous esperons que les médicament qui nous sont prescrits et que nous achetons nous amélioreront au lieu d'aggraver
+notre état . et en gros ils le font .
+ce pendant ce n'est pas toujours le cas . la contrefacon de médicaments eest un problème mondial qui a eu des conséquences
+nefastes sur des centaines de milliers de personnes dans le monde, en particulier dans les pays en dévéloppement
+qui ne disposent ni structures de reglémentation ni d'application strictes. les differents rapports sur les produits
+médicaux  contrefaits indiquent que la chine et l'inde sont les principaux producteurs de produits médicaux
+contrefaits.
+une cahine d'approvisionnement phamaceutique mondiale plus transparente est absolument nécessaire et technologie
+de la blockchain pourrait etre  la solution. la marché des produits phamaceutique contrefaits se dévéloppe rapidement.
+les revenus provenant du commerce mondial illicite de médicaments contrefaits pourraient atteindre 75 à 200 milliards
+de dollars par ans , selon les estimations du département americain du commerce. l'industrie est très rentable.
+
+le commerce des faux medicament ravage l'afrique.
+ la fabrication  et la vente de médicaments contrefaits seraient 10 à 25 fois plus rentables que les trafic
+ d'opioides. les faux médicaments se sont répandus si rapidement que, selon le coodrdinateur de la lutte contre la contrefacon
+ et le piratage à l(organisation mondiale des douanes, " il pourrait désormais y avoir plus de faux que de vrai médicaments sur le marché"
+ le fleau des faux medicaments été particulièrement aigu dans les pays en dévéloppement . selon les estimations de l'organisation mondiale de la santé (OMS). 
+ "1 médicaments sur 10 circulant dans les pays à revenu faible ou intermédiare est soit insalubre,soit falsifié", allant des vaccins antigrippaux au traitement 
+ du cancer. à l'echelle mondiale , environ 200 000 décès évitables se produitsent chaque année en raison de médicaments antipaludiques inefficaces. 
+ selon de récents estimation de l'OMS , les médicaments de qualité inferieure et les médicaments 
+ contrefaits pourraient etre responsable de 116 000 dècés par paludisme chaque années en afrique subsharienne seulement.
+ 
+ Une analyse réalisée a montré qu'entre 72 000 et 169 000 enfants dans ces pays meurent chaque année dans des suites de faux antibiotiques . les medicaments contrefaits
+ fot parfois l'actualité . par exemple lorsque plus de 1 000 personnes ont subi des effets toxique et ont été envoyées à l'hopital en novembre 2017 après avoir 
+consommé des médicaments adultères en république démocratique du congo. les pays les plus touchés en afrique sont: nigeria , bénin, kenya , togo, cote d'ivoire,
+burkina faso, sénégal,mali
+
+
+
+les faux médicament sur internet
+l'augmentation du nombres de médicaments contrefait est liées à une augmentation général du nombre de personnes utilisant internet pour acheter des produits,
+notamment parmi celles qui utilisent internet pour se diagnostiquer et se prescrire. cette pratique peut amener les gens à acheter des médicament inefficaces, 
+les médicaments qui néccessitent normalement une ordonnance , ou  d'acheter ce qu'ils pensent etre des médicament légitimes mais qui sont en realité des faux .
+
+la blockchain un remède pour l'approvisionnement phamaceutique.
+les technologies des grands livres distribués , y compris la blockchain, qui enregistre les transactions dans un système décentralisé, immuable et transparent , 
+pourraient aider à lutter contre ce problème grave, selon  le rapport du groupe de la banque mondiale, la tracabilité des médicaments pourrait etre ameliorée en 
+utilisant  un grand livre numerique distribué pour suivre "les matière premières phamaceutiques et les produits finis , des fabricants aux utilisateurs finaux"
+
+
+la blockchain peut servir de plat-forme pour le partage d'informations entre plusieurs bases de données de la chaines d'approvisionnement et permettre aux differentes 
+parties de vérifier l'authenticité des transactions qui entrent dans le grand livre. ensemble, ces fonctionnalités pourraient aider a empecher les médicaments qui ne proviennent
+pas de fabricants légitimes d'entrer dans la chaine d'approvisionnement phamaceutique. en theorie avec une blockchain phamaceutique,il serait impossible de falsifier
+un médicament ou échanger des médicaments légitimes contre des faux médicaments.
+
+la sécurité est la principale caractéristique de la technoligie de la blockchain qui est utile pour la tracabilité des médicaments . chaque  nouvelle
+transaction ajouté à un bloc est immuable et horodate, ce qui facilite le suivi d'un produit et garantit que les informations ne peuvent pas etre modifier. une blockchain
+peut etre publique ou privée.
+
+pour assurer l'authenticité et la tracabilité des medicaments , les entreprises qui enregistrent un produit  sur la blockchain doivent etre dignes de confiance. 
+par consequent, seules les chaines de blocs privées controlees par une entités centrales sont logiques pour s'assurer que les faux médicament ne sont pas enregistrés.
+l'accès d'une sociétes à la " chaines de médicaments " constituerait donc une preuve de l'authenticité des médicaments produits. les sociétes phamaceutiques décident
+quels acteurs de la chaine d'approvisionnement agissent en tant que mineurs.
+
+il pourait s'agir de fabricants , de distributeurs ou de détaillants. en fonction de la position dans la chaine d'approvisionement , chaque personne peut avoir des droits
+differents: les laboratoires peuvent en enregistrer les médicaments tandisque les grossistes ne peuvent que vérifier les transations. quand medicament est produit, 
+un hachage est générer, lequel contient toutes les informations pertinents sur le produit.
+
+chaque  fois que le medicament passe d'une entité à une autre( par exemple , du fabriquant au distributeur) , les informations sont stockées dans une chaines de block,
+ce qui facilite le suivi du médicament et enregistre des informations sur les transactions, telles que la date, l'heure et le prix de la transaction. les médicament
+sont vérifiers au moyen de code QR et de numero de série. par consequent, la possibilité d'obtenir un emballage different de celui enregistré sur la blockchain par 
+le produit produit phamaceutique est en realité inexistante.
+
+le potentiel  de la blockchain pour lutter contre la contrefacon de médicament a attiré l'attention des société phamaceutiques et des leaders de l'industrie. mais les 
+défis restent ceux qui espèrent dévélopper des projets de chaines de blocks dans l'industrie phamaceutique, des projets pilotes aux solutions à long terme,
+se heurtent à un obstacle immédiat: concevoir un modele commercial durable qui finance la mise en oeuvre de la solution et créer une structure d'incitations.
+
+cela est particulièrement important pour les sociétés phamaceutique opérant dans des pays ou modèles de conformité ne sont pas strictement réglémentés
+
+la tracabilité du circuit des médicaments à l'aide de la blockchain nécessite un enregistrement et un horlodatage du transfert des marchandises chaque point de
+la chaine d'approvosionnement . cela nécessite des efforts et des resources considérables , ce qui se traduit par des couts supplementaires
+
+
+la pluspart des personnes estiment que les fabricants de produits phamaceutiques devraient supporter le cout de la mise en oeuvre et de la maintenance, et seulement
+30poucent environ souscrivent à l'idée d'une mise en oeuvre partagée. dans l'etat actuel des choses , le financement des systèmes de suivi et de tracage basés sur les 
+chaines de block reste incertain
+
+
+cela cause  
+
+
+
+
+
+
+
+
+ 
+ *************************************************************** les object de la journée***********************************************************
+ 1- mettre une condition de validation sur mes champs input pour eviter d'envoyer les message vide
+ 2- cherche comment utiliser du jquery pour affichier et couvrir un texte
+ 3- retrouver  un problème de modélisation déja resolu
+ 4- voies comment chercher le formulaire d'une bourse d'etude
+ 
+ 
+ 
+ ****************************************************** pour deployer mon application laravel sur heroku **********************************************
+ pour deployer sur heroku:
+ 1_ heroku login
+ 2_ heroku create
+ 3_ git remote -v// pour verifier si mon gestionnaire de dependance est bien sur la branche souhaiter
+ 4_change key php artisan key:generate
+ 5_ heroku config:set APP_KEY=cle qui est dans le fichier .env de notre fichier laravel
+ 
+ //pour cette etapes je dois d'abord allez selectionner ma base de données postgress qui se trouve dans  et configurer les parametre
+ 6_ heroku config:add DB_CONNECTION=pgsql //connection a la base de données pgsql qui est dans heroku
+ 7_ heroku config:add DB_HOST=ec2-54-152-175-141.compute-1.amazonaws.com
+ 8_ heroku config:add DB_PORT=
+ 9_ heroku config:add DB_DATABASE=
+ 10_heroku config:add DB_USERNAME=
+ 11_heroku config:add DB_PASSWORD=
+ 12_git push heroku master
+ 13_heroku run php artisan migrate:refresh //rafrechir les migration pour les rendre accessible a partie de pgsql qui est situe dans sur heroku
+ 
+ 
+ *******************site php a visiter *****************************************
+ www.php-the-right-way.com
+ ************************************apres une bonne reflexion j'ai décidé de realiser une application appeller status family******************
+ **dans cette application les utilisateur doivent faire des postes pour presenter au membre de la family qui serqi supprimer apres 7 jours automatiquement
+ 
+ *************************************************************LINK INFORMATION DE CELINE****************************************
+ link qui nous a aider pour effectuer le systeme lancement de l application a partie du navigateur en utilisant le php
+ https://openclassrooms.com/forum/sujet/ouvrir-un-exe-a-distance-via-une-page-web-et-php,
+ 
+ link qui nous aider a verifier le système de connection et de deconnection des utilisateur dans notre application
+ https://www.webslesson.info/2017/08/display-online-users-using-php-mysql-with-ajax-jquery.html
+ 
+ 
+ 
+ 
+ 
+********************************************* ce que je dois faire du parapheur electronique
+ ---var ri: ressource interne;
+ ---var re: ressources externe;
+ verifier le type de ressource. si la ressources provient de l'interieur ou de l'externe de ressource.
+
+
+*************************************les fonctionnement de chaque modèle definir par HOrBAC.
+*************commenceons par le parapheur electronique du modèle.
+************* la relation emploie:
+Emploie(UDS,Paul,Secretaire); // l'université de dschang emploie Paul au poste de sécrétaire.
+Emploie(org,e,uo);
+**************la relation utilise:
+Utilise(UDS,docEtudiantTBL,administratif);//l'université de dschang utilise la  docEtudiantTBL dans la vue adminisatratif
+Utilise(org,r,v)
+***************la relation considère:
+Considère(UDS,insert,Creation);// l'universié de dschang considère l'action d'insert sur la requete de creation;
+Considère(org,a,q)
+
+les mode de traitement 
+Nous avons deux modes de traitement:
+temps réel: lorsqu'une requete est exécuté sans attendre le superieur hiérachique
+temps différé: lorsqu'une requete neccessite l'apport du superieur hiérachique pour une validation
+
+*******************permission operationnel*********************************
+Permission_opérationnel(UDS,enseignant,consulter,enseignement,ordinaire,normal);
+cette permission indique que l'organisation UDS permet aux enseignants de demander de consulter les
+programmes de leurs enseignement et d'attendre la reponse de la hiérarchie.
+PermissionOperationnelle(org,uo,q,v,c,m)
+
+*******************permission administratif********************************
+Permission_administrative(UDS, département, consulter, enseignant, enseignement, ordinaire, normal)
+la permission indique que l'organisation UDS permet aux département de traiter les requetes.
+emises par les enseignants sur la consultation des programmes de leurs enseignement en mode normal.
+Permission_administrative(org,uo,q,v,c,m)
+
+*******************Les contextes
+Nous considérons trois contextes dans notre exemple : «enseignement», «administration» et «jury».
+Le contexte «enseignement» est défini par :
+VeVrVa (Définit(UDS, e, a, r, enseignement) (<-->) Nom(r) (appartient) Matière(e) (A) Emploie(UDS, e, Gère(r))) : à l’UDS, le contexte «ordinaire» est vrai entre l’employé
+e, l’action a et la ressource r si et seulement si r est une matière enseignée par e
+et que l’unité organisationnelle qui gère r emploie e.
+
+
+
+*****************le  modèle  HRU,qui  s’ applique  sur  des  sujets,  des  objets  et  des actions. De  manière intuitive,  un  sujet est une entité
+active  alors  qu’ un  objet  est  un  conteneur d’information.  Les actions offrent aux sujets un accès direct aux objets. Elles  correspondent  généralement  à  des  actions élémentaires  comme  “lire”  ou  “écrire”. Dans  ce
+modèle,  la  politique  de  sécurité  est  réduite  à l’expression  des  permissions;
+---ce  modèle  ne permet  pas  d’exprimer  des  interdictions,  des obligations ou des recommandations.   
+ 
+****************Dans  le  modèle  de  contrôle  d’ accès  basé sur  les rôles,  ou  RBAC,  la  politique  de  sécurité  ne
+s’applique pas directement à des utilisateurs comme dans  le  modèle  précédent. Le  rôle  est  ici  le  concept
+central  de  la  politique  de  sécurité D’ un  côté des  permissions  sont  accordées  aux  rôles de
+l’ autre  les  utilisateurs  se  voient  affecter  un  ou plusieurs  rôles. 
+---Le  concept de hiérarchie de  rôle est  quelque peu  ambigu.  En général,  la hiérarchie  des
+rôles  ne  correspond  pas  tout  à  fait  à  la  hiérarchie  organisationnelle.  Par  exemple,  
+le directeur de l’hôpital a un rôle administratif supérieur au rôle de médecin. Pour autant,
+un  directeur  de  l’hôpital  n’est  pas  nécessairement  un  médecin,  ainsi  il  n’est  pas
+faisable d’accorder au directeur les permissions du médecin.
+---il  n’ est  pas  possible  dans  le  modèle RBAC  d’ exprimer  des  permissions  qui  dépendent du contexte.
+ il  n’ y  a  aucun  moyen de  spécifier  qu’ un  médecin  n’ a  la  permission d’ accéder  au  dossier  médical  d’ un  patient  que  si  ce
+dernier  est  son  patient .
+  il est  uniquement  possible  de  définir  des  permissions.
+l’ application  du  modèle  RBAC  à  la définition  d’ une  politique  de  sécurité  d’ un  système
+contenant  plusieurs  organisations  fait  apparaître d’ autres limites de ce modèle
+
+*****************************je suis ici sur la partie implementation de mon application
+** si dieu le permet cet que je dois faire ce soir est :
+****************presenter xamp
+****************presenter visual sudo code
+****************parler de l'outil de de filezila
+
+**si dieu le permet aussi je dois presenté les language utilisé pour codé l'application
+
+** désinez certain interface et faire des capture pour expliquer le mode de fonctionnement de mon application.
+
+************************************modèle orbac et ces extensions.
+Le modèle de contrôle d’accès Or-BAC (Organization Based Access Control)
+vise à résoudre certains problèmes rencontrés par les premiers modèles de contrôle d’accès des années 90 et à établir une politique de
+contrôle d’accès plus abstraite.
+
+
+*********************************parametre de connection des données dans ma base de données pour l'université de dschang
+
+***************** administrator:tchoufack@tchoufack.com password:159753     
+***************** validate :feugap@feugap.com      password:0258
+***************** teacher :azanguezet@azanguezet.com password:0369
+***************** student : tsalata@tsalata.com          password:0159147
+
+
+********************************parametre de connection pour l université de douala
+******************************* les modèles de controle collaboratif
+
+******************************* multi-Orbac
+Multi-OrBAC est une extension du OrBAC pour les systèmes multi organisationnels
+complexes, hétérogènes, interopérables et distribués. C’est un modèle de sécurité dynamique
+et adaptable, permettant d’un côté de spécifier des politiques de sécurité différentes dans
+chaque organisation, et de l’autre d’imposer des règles pour les interactions entre organisations
+qui soient compatibles avec les politiques de chaque organisation. Ce modèle vise donc des
+applications et systèmes complexes, hétérogènes, interopérables et distribués.
+****Multi-OrBAC garde la méthodologie très pertinente d’OrBAC
+****Le principal défaut de Multi-OrBAC réside dans le fait que la définition de la politique
+de sécurité de chaque organisation doit prendre en compte, donc connaître, 
+des entités appartenant à d’autres organisations, et suppose donc une confiance
+entre les organisations pour ce qui concerne la gestion de ces entités.
+
+*******************************VO(Virtual Organization)
+****Une Organisation Virtuelle(OV) est un ensemble d’organisations reliées par les technologies
+ d’information (TI), poursuivant la réalisation commune d’un projet ou d’une activité économique.
+***Une Organisation Virtuelle définit une communauté virtuelle formée de plusieurs organisations
+ ou entreprises qui unissent leurs compétences et ressources pour répondre à une opportunité
+ qu’elles n’auraient pu prendre en charge seules.
+****Cette alliance est en général définie pour une durée limitée : une fois le bien ou service livré,
+le regroupement est démantelé. Les infrastructures des technologies de l’information sont au coeur
+de l’organisation virtuelle et le support de ses activités
+
+
+
+******************************************SI
+Dans un système informatique, l’autorisation a pour but de
+ne permettre que les actions légitimes, c’est-à-dire à empêcher
+qu’un utilisateur puisse exécuter des opérations qui
+ne devraient pas lui être permises. Pour définir quelles sont
+les opérations autorisées et celles qui sont interdites, il faut
+établir une politique de sécurité.
+
+******************************************modèle HOr-BAC
+	Etant donne  que ce modèle à été définir pour un fonctionnement dans un cadre 
+	\textbf{Organisationnel}  c'est-a-dire au sein d'une \textbf{Organisation} .
+	Le problème qui ce pose est de savoir comment 
+	définir la politique du modèle dans un cadre collaboratif (entre \textbf{Organisation}).
+	
+****************************************La COVID-19
+Le Cameroun, Comme dans certains pays d'Afrique et du monde, 
+en raison de la crise sanitaire actuelle qui prévaut, le pays
+ fait face à des difficultés en tout genre qui touche de nombreux 
+ secteurs d'activité et met en mal l'économie du pays. La COVID-19,
+ de son nom, Survenu en décembre dernier à WUHAN, en Chine,
+ est une pandémie qui a su imposer à l'humanité un nouveau 
+ mode de vie, à tel point que même les commodités d'usage 
+ en paient les frais. L'un des secteur les plus toucher est le secteur 
+ de éducatif. %pour éviter la perte total de l'année scolaire 
+ les gouvernement camerounais a mit sur pied un système de e-learning
+ pour les étudiants et cours télévisés pour les élèves du secondaire.
+ Notre objectif est de faire communiquer ces différents Platform des 
+ échanges les données et services.
+******** celine dion
+i believe music  
+********futurist
+say something
+
+ https://www.youtube.com/watch?v=BmErRm-vApI
+ https://www.youtube.com/watch?v=BmErRm-vApI
+ https://wwv.hds-streamingvf.net/films/our-brand-is-crisis/
+ 
+ 
+------important a savoir par rapport a git-------
+--la commande git log permet de voir tout les imformation relative a un commit dans git
+--la commande git log --oneline permet de voir les sujet des message de commit
+--la commande git shortlog permet d'affichier a plus des sujet l'auteur des commit 
+--pour renommer un fichier sur git la tape la comment git mv ancien_nom nouveau_nom
+--pour paser du repertoire de travail au depot git directement on execute la comment git commit -a -m "message de commit"
+--la commande git rm nom_fichier effectue deux action. il supprime un fichier du repertoire de travail et le supprime aussi de l'index 
+donc faire un git rm revient a faire un rm du fichier et un git add 
+-- pour supprimier un fichier deja envoyer dans le cached de git il suffit d'exercuté la commande git rm --cached nom_fichier
+--pour ajouter un fichier dans la liste des fichiers a ignoré il suffit d'exercuté la commande
+//intermediare très important aujourdhui que j'ai vue c'est la bourse d'etude
+//le mots est utilisé pour chercher les bourses d'etude grados : scholarship around the world
+
+--invide de commande de git il faut lorsque on faire un git log pour affichier les historiques, si a la fin un : 
+saffiche cela veut dire tout simplement que tout les histiroque ne sont pas encore affichier dans se cas, 
+il vous suffit de cliquer sur enter pour afficher tous les modifications. et q pour quitte 
+
+--étant donné que un commit c'est une modification pour filtrer par auteur il suffit pour nous de taper la commande git log --author "nom de l autheur"
+--pour netoyer le terminal windows il faut taper juste la commande cls
+--un peu aussi affichier les commit pas date en tapant la commande git log --before="ANNE-MM-JJ" On peut aussi utiliser after pour dire a la date qui viens bien après
+--pour savoir ce qui a été effectuer sur un fichier en particulier il suffit pour nous d'excercuté la commande git log nom_fichier// git log --online nom_fichier 
+pour resumé sur une ligne 
+
+
+--la commande git diff nous permet de comparer nous index au depot git 
+--la commande git giff --cached nous permet de comparer les modification qui sont dans notre cache
+--pour comparer notre depot au repertoire de travail il suffit d'appliquer la commande git diff HEAD
+-- Pour afficher la difference du contenu du derniere commit il suffit d'appliquer la commande git diff HEAD^1
+--on peut egalement comparer le recourcies  plus hache en exercutant la commande git diff hache1 hache2
+--pour rechercher un commit spécifique il suffit d'exercuté la commande git log -S "valeur de recherche" //meme l'option -G fonctionne pour les meme effet 
+--la commande git blame nom_fichier nom permet de affichier le code source du fichier et les informations par rapport a la personne qui a effectuer ces modifications
+-- pour annuler les modifications dans notre projet pour revenir au projet initiale 
+il suffit d'exercuté la comme git reset --hard
+--pour revenir a une modification qui fonctionne bien il suffit d'exercuté 
+git log --oneline pour d'abord affichier et après get reset --hard hacher. pour revenir a la modification qui fonctionnait bien 
+pour supprimer les fichiers presents dans gitignore il suffit d'exercuté la commande
+git clean -xf 
+
+
+
+
+--la commande git log --oneline --branches --graph permet d'affichier une architecture bien detailler de notre programme  
+--pour verifier sur quelle branch on se trouve il nous suffit pour cela d'exercuté la commande git branch
+--pour afficher les branche et les commit sous forme de graphe il faut executer la commande 
+git log --graph --oneline
+--pour creer une branch il suffit d'exerté la commande git branch nom_de_branche. les caractère spéciaux ne sont pas autorisé
+-- pour changer des branch il suffit d'exercuté la commande git checkout nom_de_branche
+-- pour fusion il suffit pour nous de nous position sur la branche  principale et d'exercuté la commande git merge nom_de_la_branche_que_on_souhait_ajouter
+--git checkout -b nom_de_branche nous permet de creer une branche et directement faire un checkout(se position) dessus
+-- pour resourdre les conflit dans notre project git il nous suffit d'allez dans notre projet et regarder nous se trouve : HEAD car cela est bien indiquer dans notre project<<<<<<< >>>>>>>
+-- pour supprimer une branche il suffit d'exercuté la commande git branch -d nom_de_branche
+--pour changer de version dans notre projet il nous suffit d'exercute la commade git tag v1.0.0 harcher
+le comment git show nous permet de bien daguer pour verifier la version du projet sur lequelle on est situé
+--pour ajouter des anotation il nous suffit d'exercuté la commande git tag -a version harcher -m"message de version " | -a pour annotation
+git show version pour voie la version 
+-- pour creer un depot distant vide il nous suffit d'exercuter la commande git init --bare nom_depot
+--pour supprimer un depot distant il faut exercuté rm Rf nom_depot
+--pour creer un depot distant associer a notre projet il nous suffit d'exercuté la commande git clone  --bare nom_depot_local_a_qui_on_souhait_associer_notre_depot_local/nom_depot_distant
+--pour verifier que notre depot distant est bien connecter a un depot local il nous suffit d'exercuté la commande git remote. (origin pour github et heroku pour la platform de heroku)
+--pour connecter sont depot local au depot distant il suffit d'exercuté la commande git remote add url_du_depot // ex:./distant/
+--pour envoyer dans notre depot distant il nous suffit pour cela d'exercuté la commande git push origin master
+--pour afficher tout les branch avec les branche ditant il vous suffit d'exercuté la commande git branch --all
+pour creer une branche distant et basculer decu il suffit d exercute la commande 
+git checkout -b nom_branche origin/nom_branche
+pour supprimer un branche distante il suffit d'exercuter la commande git push origin:nom_de_branch
+pour supprimer une branche local il suffit d'exercuter la commande git branch -d nom_de_branch
+--gitk est outil de git nous permettant de regrader les information git sous forme vituele
+on l'install sur ubuntu grace a la commande sudo apt-get install gitk
+
+lorsque on a un bue la commaande git bisect nous permet de chercher le commin qui coser probleme(bug)
+les allias dans git sont les suivants 
+git co//pour checkout
+git br //pour branch
+git ci //pour commit 
+git  st //pour status
+
+
+
+comment deployer une application php avec une base de donnée sur heroku?
+Les outils qui doivent etre installer dans votre système d'exploitation //xampp,protgress,composer,heroku,git
+--ce connecter grace a la commande heroku login
+--creer une application vide grace a la commande heroku create
+--une fois l application creer,initializer git au sein de notre application grace a git init
+--faire ensuite un git add . et un git commit -am"udapte" pour ajouter les depot au repositories git 
+--faire un heroku git: remote -a engimatic app_name(l'application qui est sur heroku) pour connecter notre depot distant
+--une voit lier le depot distant il faut push l'application sur heroku grace a git push heroku master
+--creer la base de données grace la commande suivante:
+heroku addons:create heroku-postgresql:hobby-dev -a app_name//a la fin de sont exercution on doit vous presicer le nom de votre application. pour nous ici c'est postgresql-infinite-40005
+ensuite allez dans les setting de la base de données qui a été creer recuperer host,database,user,port,password car se sera les nouvelle nouvelle information qui seront utiliser lors de la connection de mon application
+--recuperer le Heroku CLI et l'exercuter dans notre ligne de commande pour pouvoir inserer les donners dans notre base de données
+ex:heroku pg:psql postgresql-reticulated-50752 --app salty-ridge-28174 une voie son exercution nous pouvons commancer a nous connecter et manipuler notre 
+base données en invite de commande (CREATE TABLE NAME_TABLE ET INSERER les element dans les table qui on ete creer)
+--faire un git add . et un git commit -m" pour push le project a nouveau sur heroku"
+--si vous avez une erreur faire un heroku git:remote -a app_name
+-- faire un git push -f heroku master pour l'option -f est utiliser pour forcer le push sur heroku 
+
+
+//les chant a augmenter le chant contact, le change addresse, numero, modifier egalement les newlletter de tous les pages,regarder aussi le problème sur les photos 
+//voie comment je peux augmenter le nombre d'images sur les photos et modifier egalement les photos qui se répete ajouter les validation sur les formulaire
+
+//pour les resultat du premier deployement
+
+//canadaville.co est relier a https://geniusv2.herokuapp.com/
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
